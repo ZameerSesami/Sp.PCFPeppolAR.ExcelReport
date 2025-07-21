@@ -203,7 +203,6 @@ namespace Sp.PCFPeppolAR.ExcelReport
                     {
                         mail.To.Add(new MailAddress(ToEmail));
                     }
-
                     String CCaddressees = System.Configuration.ConfigurationManager.AppSettings["MailCC"];
                     String[] ccaddr = CCaddressees.Split(',');
                     foreach (string ccEmail in ccaddr)
